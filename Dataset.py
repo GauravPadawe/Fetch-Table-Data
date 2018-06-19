@@ -1,3 +1,6 @@
+'''The Code actually is more of a Web Crawler type, but I had tried to Focus on Output and thought to produce it in simplest manner
+without using Python advanced Libarary. After working on it for a day or so I somehow managed to achieve the target with GREAT ACCURACY'''
+
 file = open('D:/Gaurav - Docs/Projects/Python/Fetch Table Data/baby1998.html', 'r')  # Set preffered path using forward slash, "r" to read
 r = file.read()           # read function reads file
 ref = str(r
