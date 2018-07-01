@@ -1,3 +1,5 @@
+## Unlike other python code I wrote before this is same code but implemented DataFrame from pandas and exported dataset to excel file. 
+
 import pandas as pd
 file = open('D:/Gaurav - Docs/Projects/Python/Fetch Table Data/baby1998.html', 'r')
 r = file.read()
@@ -38,9 +40,9 @@ def final(ref):
     #male = pd.Series(m)
     #female = pd.Series(f)
     #rank = pd.Series(r)
-    return (pd.DataFrame({'Male':m, 'Female':f}, index=r))
+    return (pd.DataFrame({'Male':m, 'Female':f}, index=r))   # Creating dataframe and returning it
 
-x = final(ref)
+x = final(ref)                  # Assigning DataFrame to X
 #print (final(ref))
-writer = pd.ExcelWriter('D:/Gaurav - Docs/Projects/Python/Fetch Table Data/PythonExport.xlsx')
+writer = pd.ExcelWriter('D:/Gaurav - Docs/Projects/Python/Fetch Table Data/PythonExport.xlsx')   # Writing it to new Excel file
 z = x.to_excel(writer,'Sheet1')
